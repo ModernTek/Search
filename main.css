@@ -2,7 +2,7 @@
 
 .fontana_form__inputAttr {
   font-family: 'Lato', sans-serif;
-  font-size: 1em;0.875em;
+  font-size: 1em;
   width: 350px;
   height: 70px;
   padding: 0px 15px 0px 15px;   
@@ -47,14 +47,9 @@
 }
    .fontana_form__inputAttr::-webkit-input-placeholder, 
    #fontanta_form__message::-webkit-input-placeholder {
-     color: #FF530D;
      font-size: 1.2em;
    }
 
-   .fontana_form__inputAttr:focus::-webkit-input-placeholder,
-   #fontana_form__message:focus::-webkit-input-placeholder {
-     color: #FF530D;
-   }
 
    .fontanta_form__inputAttr::-moz-placeholder, 
    #fontanta_form__message::-moz-placeholder {
@@ -64,7 +59,7 @@
 
    .fontana_form__inputAttr:focus::-moz-placeholder,  
    #fontanta_form__message:focus::-moz-placeholder {
-     color: #FF530D;
+     /*color: #FF530D;*/
    }
 
    .fontana_form__inputAttr::placeholder,   
@@ -73,7 +68,8 @@
      font-size: 1.2em;
    }
 
-.fontanta_form__inputAttr:focus::placeholder,   #fontana_form__message::focus:placeholder {
+.fontanta_form__inputAttr:focus::placeholder,   
+#fontana_form__message::focus:placeholder {
   color: #bbb5af;
 }
 
@@ -95,7 +91,8 @@
 }
 
 
-.fontana_form__inputAttr:hover::-moz-placeholder, #fontana_form__message:hover::-moz-placeholder {
+.fontana_form__inputAttr:hover::-moz-placeholder, 
+#fontana_form__message:hover::-moz-placeholder {
   font-size: 1.2em;
 }
 
@@ -104,16 +101,19 @@
   color: #cbc6c1;
 }
 
-.fontana_form__inputAttr:hover::placeholder, fontana_form__message:hover::placeholder {
+.fontana_form__inputAttr:hover::placeholder, 
+#fontana_form__message:hover::placeholder {
   color: #e2dedb;
   font-size:1.2em;
 }
 
-.fontana_form__inputAttr:hover:focus::placeholder, #fontana_form__message:hover:focus::placeholder {
+.fontana_form__inputAttr:hover:focus::placeholder, 
+#fontana_form__message:hover:focus::placeholder {
   color: #2e8b57;
 }
 
-.fontana_form__inputAttr:hover::placeholder, #fontana_form__message:hover::placeholder {
+.fontana_form__inputAttr:hover::placeholder, 
+#fontana_form__message:hover::placeholder {
   color: #e2dedb;
   font-size:1.2em; 
 }
@@ -144,7 +144,7 @@
 
 #fontana_form__message {
 
-  width: 385px;
+  width: 350px;
   height: 250px;
   max-height: 300px;
   background: transparent;
@@ -196,28 +196,28 @@
         rgba(0,0,0,1) 1%,
         rgba(179,172,167,1) 50%,
         rgba(0,0,0,1) 100%
-    ) 0 0 100% 0/0 0 3px 0 stretch;
+    ) 0 0 100% 0/0 0 2px 0 stretch;
 
     -moz-border-image: -moz-linear-gradient(
         left,
         rgba(0,0,0,1) 1%,
         rgba(0,255,255,1) 50%,
         rgba(0,0,0,1) 100%
-    ) 0 0 100% 0/0 0 3px 0 stretch;
+    ) 0 0 100% 0/0 0 2px 0 stretch;
 
     -o-border-image: -o-linear-gradient(
         left,
         rgba(0,0,0,1) 1%,
         rgba(0,255,255,1) 50%,
         rgba(0,0,0,1) 100%
-    ) 0 0 100% 0/0 0 3px 0 stretch;
+    ) 0 0 100% 0/0 0 2px 0 stretch;
 
     border-image: linear-gradient(
         to left,
         rgba(0,0,0,1) 1%,
         rgba(0,255,255,1) 50%,
         rgba(0,0,0,1) 100%
-    ) 0 0 100% 0/0 0 3px 0 stretch;
+    ) 0 0 100% 0/0 0 2px 0 stretch;
 } 
 
 #fontana_form__message:required:valid{
@@ -229,7 +229,7 @@
         rgba(0,0,0,1) 1%,
         rgba(0,255,255,1) 50%,
         rgba(0,0,0,1) 100%
-  ) 0 100% 0 100%/0 3px 0 2px stretch;
+  ) 0 100% 0 100%/0 2px 0 2px stretch;
   -moz-border-image: -moz-linear-gradient(
         bottom,
         rgba(0,0,0,1) 1%,
@@ -247,15 +247,33 @@
         rgba(0,0,0,1) 12%,
         rgba(0,255,255,1) 50%,
         rgba(0,0,0,1) 100%
-    ) 0 100% 0 100%/0 3px 0 2px stretch;
+    ) 0 100% 0 100%/0 2px 0 2px stretch;
 }
 #fontana_form__textbottom{
  
-  width:380px;
-  margin-top: -5px;
+  width:350px;
+  margin-top: -3px;
   border-style:solid;
   -webkit-border-image: -webkit-linear-gradient(
         left,
+        rgba(179,172,167,1) 12%,
+        rgba(0,0,0,1) 50%,
+        rgba(179,172,167,1) 85%
+  ) 100% 0 0 0/2px 0 0 0 stretch;
+  -moz-border-image: -moz-linear-gradient(
+        left,
+        rgba(179,172,167,1) 12%,
+        rgba(0,0,0,1) 50%,
+        rgba(179,172,167,1) 85%
+  ) 100% 0 0 0/2px 0 0 0 stretch;
+  -o-border-image: -o-linear-gradient(
+        left,
+        rgba(179,172,167,1) 12%,
+        rgba(0,0,0,1) 50%,
+        rgba(179,172,167,1) 85%
+  ) 100% 0 0 0/2px 0 0 0 stretch;
+  border-image: linear-gradient(
+        to left,
         rgba(179,172,167,1) 12%,
         rgba(0,0,0,1) 50%,
         rgba(179,172,167,1) 85%
@@ -270,24 +288,24 @@
         rgba(0,0,0,1) 1%,
         rgba(0,255,255,1) 50%,
         rgba(0,0,0,1) 100%
-  ) 0 0 100% 0/0 0 3px 0 stretch;
+  ) 0 0 100% 0/0 0 2px 0 stretch;
   -moz-border-image: -moz-linear-gradient(
         left,
         rgba(0,0,0,1) 1%,
         rgba(0,255,255,1) 50%,
         rgba(0,0,0,1) 100%
-  ) 0 0 100% 0/0 0 3px 0 stretch;
+  ) 0 0 100% 0/0 0 2px 0 stretch;
   -o-border-image: -o-linear-gradient(
         left,
         rgba(0,0,0,1) 1%,
         rgba(0,255,255,1) 50%,
         rgba(0,0,0,1) 100%
-  ) 0 0 100% 0/0 0 3px 0 stretch;
+  ) 0 0 100% 0/0 0 2px 0 stretch;
   border-image: linear-gradient(
-        left,
+        to left,
         rgba(0,0,0,1) 1%,
         rgba(0,255,255,1) 50%,
         rgba(0,0,0,1) 100%
-  ) 0 0 100% 0/0 0 3px 0 stretch;
+  ) 0 0 100% 0/0 0 2px 0 stretch;
      
 }
