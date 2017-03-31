@@ -1,121 +1,293 @@
-html{
-  margin: 0px;
-  padding: 0px;
-  background: #000000;
-}
-body {
-   background-color:#EEEEEE margin:0px;
-	margin:0px;
-	border-style: none;
-	fonfont-size:12px;
-  height: 100%;
-  width: 38%;
-  padding: 20px;
-  margin: 10px auto;
-  font-family: Helvetica, Arial, sans-serif;
-  color: #000000;
-  background: rgb(128, 148, 121);
-  
-  background: linear-gradient(to bottom,
-              rgba(1, 148, 131,1) 0%, 
-              rgba(190, 148, 121,1) 100%);
-}   
-@font-face{
-  font-family: 'Conv_azoft-sans-bold-italic';
-  src: url('fonts/azoft-sans-bold-italic.eot');
-}
 
-.headerStyle {
-	text-align: right;
-	position  : absolute;
-	left      : 560px;
-	top       : 5px;
-	width     : 255px;
-	height    : 25px;
-}
 
-background: linear-gradient(to bottom,
-                            rgba(191, 142, 126,1) 0%, 
-                            rgba(194, 114, 87,1) 100%);
-}
-  
-#search_form .fieldset_border{
-  border-color :#b2B2B2;
-  border-style : solid;
-  border-radius: 12px;
-  border-with  :6px;
-} 
-#search_form .txtinput.select{
-  width :49%;
-  color :#777777;
-  height:25px ;
-  radius: 20px;-moz-border-radius: 20px;
-	-webkit-border-
-  -moz-border-radius: 20px;
-	-webkit-border-
-}
-#signup_form .txtinput{
-  font-family      :arial;
-	font-family      :SansationLight;
-	font-size        :11pt;
-	font-weight      :bold;
-	background-color :336699;
-  border-style     :solid;
-  border-radius    :6px;
-  border-width     :2px;
-  border-color     :#3F251D;
-	color            :gray;
-  height           :20px;
-  -moz-border-radius   : 10px;
-	-webkit-border-radius: 10px;
-  padding-left     : 40px;
-  width            : 40%;
-  color            : #777;
-  cursor           :pointer;
-}
-#signup_form .txtinput.select{
-  width :49%;
-  color :#777777;
-  height:25px ;
-  radius: 20px;
-  -moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-  -moz-border-radius: 20px;
-}
-
-#search_form .submit{
-  text-align:center;
-}
- 
-#search_form .submit_btn{
-  color     :#ffffff;
-  cursor    :pointer;
-  height    :100%;
-  box-shadow: order-radius:5px;
-  width     : 20%;
-  height    : 100%;
-  font-size : 5px 5px 10px 5px #888888;
-  background: rgb(149,149,149);
-
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(149,149,149,1)),    color-stop(46%,rgba(13,13,13,1)), color-stop(50%,rgba(1,1,1,1)), color-stop(53%,rgba(10,10,10,1)),  color-stop(76%,rgba(78,78,78,1)), color-stop(87%,rgba(56,56,56,1)), 
- color-stop(100%,rgba(27,27,27,1)));
-}  
-
-.error {
-  display: none;
-  color: green; 
-  font-weight: bold; 
-  font-size:12px;
-  }
-
-.submitted :invalid + .error { display: block; }
-
-/* This is our style for the invalid fields */
-input:invalid{
-  border-color: #900;
-  background-color: #FDD;
-}
-
-input:focus:invalid {
+.fontana_form__inputAttr {
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;0.875em;
+  width: 350px;
+  height: 70px;
+  padding: 0px 15px 0px 15px;   
+  background: transparent;
   outline: none;
+  color:  #726659;
+  border-style:solid;
+  -webkit-border-image: -webkit-linear-gradient(
+        left,
+        rgba(179,172,167,1) 12%,
+        rgba(0,0,0,1) 50%,
+        rgba(179,172,167,1) 85%
+    ) 0 0 100% 0/0 0 2px 0 stretch;
+  
+  -moz-border-image: -moz-linear-gradient(
+        left,
+        rgba(179,172,167,1) 1%,
+        rgba(0,0,0,1) 50%,
+        rgba(179,172,167,1) 100%
+    ) 0 0 100% 0/0 0 2px 0 stretch;
+
+  -o-border-image: -o-linear-gradient(
+        left,
+        rgba(179,172,167,1) 1%,
+        rgba(0,0,0,1) 50%,
+        rgba(179,172,167,1) 100%
+    ) 0 0 100% 0/0 0 2px 0 stretch;
+  
+   border-image: linear-gradient(
+        to left,
+        rgba(179,172,167,1) 1%,
+        rgba(0,0,0,1) 50%,
+        rgba(179,172,167,1) 100%
+    ) 0 0 100% 0/0 0 2px 0 stretch;
+
+   border-image-slice: 1;
+     
+   transition: all 0.3s ease-in-out;
+   -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -ms-transition: all 0.3s ease-in-out;
+}
+   .fontana_form__inputAttr::-webkit-input-placeholder, 
+   #fontanta_form__message::-webkit-input-placeholder {
+     color: #FF530D;
+     font-size: 1.2em;
+   }
+
+   .fontana_form__inputAttr:focus::-webkit-input-placeholder,
+   #fontana_form__message:focus::-webkit-input-placeholder {
+     color: #FF530D;
+   }
+
+   .fontanta_form__inputAttr::-moz-placeholder, 
+   #fontanta_form__message::-moz-placeholder {
+     color: #aca49c;
+     font-size: 1.2em;
+   }
+
+   .fontana_form__inputAttr:focus::-moz-placeholder,  
+   #fontanta_form__message:focus::-moz-placeholder {
+     color: #FF530D;
+   }
+
+   .fontana_form__inputAttr::placeholder,   
+   #fontanta_form__message::placeholder {
+     color: #aca49c;
+     font-size: 1.2em;
+   }
+
+.fontanta_form__inputAttr:focus::placeholder,   #fontana_form__message::focus:placeholder {
+  color: #bbb5af;
+}
+
+.fontana_form__inputAttr::-ms-placeholder, 
+ #fontana_form__message::-ms-placeholder {
+  color: #aca49c;
+  font-size: 1.2em;
+}
+
+.fontana_form__inputAttr:focus::-ms-placeholder,    #fontanta_form__message:focus::-ms-placeholder {
+  color: #bbb5af;
+}
+
+/* on hover placeholder */
+
+.fontana_form__inputAttr:hover::-webkit-input-placeholder, 
+#fontana_form__message:hover::-webkit-input-placeholder {
+  font-size: 1.2em;
+}
+
+
+.fontana_form__inputAttr:hover::-moz-placeholder, #fontana_form__message:hover::-moz-placeholder {
+  font-size: 1.2em;
+}
+
+.fontana_form__inputAttr:hover:focus::-moz-placeholder,
+#fontana_formt__message:hover:focus::-moz-placeholder {
+  color: #cbc6c1;
+}
+
+.fontana_form__inputAttr:hover::placeholder, fontana_form__message:hover::placeholder {
+  color: #e2dedb;
+  font-size:1.2em;
+}
+
+.fontana_form__inputAttr:hover:focus::placeholder, #fontana_form__message:hover:focus::placeholder {
+  color: #2e8b57;
+}
+
+.fontana_form__inputAttr:hover::placeholder, #fontana_form__message:hover::placeholder {
+  color: #e2dedb;
+  font-size:1.2em; 
+}
+
+.fontana_form__inputAttr:hover:focus::-ms-placeholder,
+#fontana_form__message:hover::focus:-ms-placeholder {
+  color: #cbc6c1;
+}
+
+#fontanta_form__header {
+  position: relative;
+  margin: 100px 0 25px 0;
+  font-size: 1.5em;
+  text-align: center;
+  letter-spacing: 7px;
+ 
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#fontana_form {
+  position: relative;
+  width: 500px;
+  margin: 50px auto 100px auto;
+}
+
+
+#fontana_form__message {
+
+  width: 385px;
+  height: 250px;
+  max-height: 300px;
+  background: transparent;
+  outline: none;
+  color: #726659;
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  
+  
+  -webkit-border-image: -webkit-linear-gradient(
+        bottom,
+        rgba(179,172,167,1) 12%,
+        rgba(0,0,0,1) 50%,
+        rgba(179,172,167,1) 85%
+    ) 0 100% 0 100%/0 2px 0 2px stretch;
+  
+   -moz-border-image: -moz-linear-gradient(
+        bottom,
+        rgba(179,172,167,1) 1%,
+        rgba(0,0,0,1) 50%,
+        rgba(179,172,167,1) 100%
+    ) 0 100% 0 100%/0 2px 0 2px stretch;
+  
+    -o-border-image: -o-linear-gradient(
+        bottom,
+        rgba(179,172,167,1) 1%,
+        rgba(0,0,0,1) 50%,
+        rgba(179,172,167,1) 100%
+    ) 0 100% 0 100%/0 2px 0 2px stretch;
+  
+    border-image: linear-gradient(
+        bottom,
+        rgba(179,172,167,1) 1%,
+        rgba(0,0,0,1) 50%,
+        rgba(179,172,167,1) 100%
+    ) 0 100% 0 100%/0 2px 0 2px stretch;
+
+      border-image-slice: 1;
+      box-sizing: border-box !important; 
+}
+  
+
+.fontana_form__inputAttr:required:valid{
+
+   border-style: solid;
+    
+    -webkit-border-image: -webkit-linear-gradient(
+        left,
+        rgba(0,0,0,1) 1%,
+        rgba(179,172,167,1) 50%,
+        rgba(0,0,0,1) 100%
+    ) 0 0 100% 0/0 0 3px 0 stretch;
+
+    -moz-border-image: -moz-linear-gradient(
+        left,
+        rgba(0,0,0,1) 1%,
+        rgba(0,255,255,1) 50%,
+        rgba(0,0,0,1) 100%
+    ) 0 0 100% 0/0 0 3px 0 stretch;
+
+    -o-border-image: -o-linear-gradient(
+        left,
+        rgba(0,0,0,1) 1%,
+        rgba(0,255,255,1) 50%,
+        rgba(0,0,0,1) 100%
+    ) 0 0 100% 0/0 0 3px 0 stretch;
+
+    border-image: linear-gradient(
+        to left,
+        rgba(0,0,0,1) 1%,
+        rgba(0,255,255,1) 50%,
+        rgba(0,0,0,1) 100%
+    ) 0 0 100% 0/0 0 3px 0 stretch;
+} 
+
+#fontana_form__message:required:valid{
+  
+  border-style: solid;
+    
+  -webkit-border-image: -webkit-linear-gradient(
+        bottom,
+        rgba(0,0,0,1) 1%,
+        rgba(0,255,255,1) 50%,
+        rgba(0,0,0,1) 100%
+  ) 0 100% 0 100%/0 3px 0 2px stretch;
+  -moz-border-image: -moz-linear-gradient(
+        bottom,
+        rgba(0,0,0,1) 1%,
+        rgba(0,255,255,1) 50%,
+        rgba(0,0,0,1) 100%
+  ) 0 100% 0 100%/0 2px 0 2px stretch;
+  -o-border-image: -o-linear-gradient(
+        bottom,
+        rgba(0,0,0,1) 1%,
+        rgba(0,255,255,1) 50%,
+        rgba(0,0,0,1) 85%
+  ) 0 100% 0 100%/0 2px 0 2px stretch;
+  border-image: linear-gradient(
+        bottom,
+        rgba(0,0,0,1) 12%,
+        rgba(0,255,255,1) 50%,
+        rgba(0,0,0,1) 100%
+    ) 0 100% 0 100%/0 3px 0 2px stretch;
+}
+#fontana_form__textbottom{
+ 
+  width:380px;
+  margin-top: -5px;
+  border-style:solid;
+  -webkit-border-image: -webkit-linear-gradient(
+        left,
+        rgba(179,172,167,1) 12%,
+        rgba(0,0,0,1) 50%,
+        rgba(179,172,167,1) 85%
+  ) 100% 0 0 0/2px 0 0 0 stretch;
+}
+
+#fontana_form__message:required:valid + #fontana_form__textbottom{
+  
+  border-style: solid;  
+  -webkit-border-image: -webkit-linear-gradient(
+        left,
+        rgba(0,0,0,1) 1%,
+        rgba(0,255,255,1) 50%,
+        rgba(0,0,0,1) 100%
+  ) 0 0 100% 0/0 0 3px 0 stretch;
+  -moz-border-image: -moz-linear-gradient(
+        left,
+        rgba(0,0,0,1) 1%,
+        rgba(0,255,255,1) 50%,
+        rgba(0,0,0,1) 100%
+  ) 0 0 100% 0/0 0 3px 0 stretch;
+  -o-border-image: -o-linear-gradient(
+        left,
+        rgba(0,0,0,1) 1%,
+        rgba(0,255,255,1) 50%,
+        rgba(0,0,0,1) 100%
+  ) 0 0 100% 0/0 0 3px 0 stretch;
+  border-image: linear-gradient(
+        left,
+        rgba(0,0,0,1) 1%,
+        rgba(0,255,255,1) 50%,
+        rgba(0,0,0,1) 100%
+  ) 0 0 100% 0/0 0 3px 0 stretch;
+     
 }
