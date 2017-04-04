@@ -1,74 +1,94 @@
 
 
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+#fontana_form {
+  position: relative;
+  width: 500px;
+  margin: 50px auto;
+}
+
+#fontanta_form__header {
+  position: relative;
+  margin: 100px 0 25px 0;
+  font-size: 1.6em;
+  text-align: center;
+  opacity:0.7;
+  letter-spacing: 7px;
+  font-family: 'Roboto';
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .fontana_form__inputAttr {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto';
+  vertical-align:bottom;
   font-size: 1em;
   width: 350px;
-  height: 70px;  
+  height: 1.4em;;
+  margin-top:3em;
+  padding: 25px 10px -12px 2px;
   background: transparent;
   outline: none;
   color:  #726659;
   border-style:solid;
   -webkit-border-image: -webkit-linear-gradient(
         left,
-        rgba(179,172,167,1) 12%,
+        rgba(255,255,255,1) 1%,
         rgba(0,0,0,1) 50%,
-        rgba(179,172,167,1) 85%
-    ) 0 0 100% 0/0 0 2px 0 stretch;
+        rgba(255,255,255,1) 100%
+    ) 0 0 100% 0/0 0 1px 0 stretch;
   
-  -moz-border-image: -moz-linear-gradient(
+   -moz-border-image: -moz-linear-gradient(
         left,
-        rgba(179,172,167,1) 1%,
+        rgba(255,255,255,1) 1%,
         rgba(0,0,0,1) 50%,
-        rgba(179,172,167,1) 100%
-    ) 0 0 100% 0/0 0 2px 0 stretch;
-
-  -o-border-image: -o-linear-gradient(
+        rgba(255,255,255,1) 100%
+    ) 0 0 100% 0/0 0 1px 0 stretch;
+    -o-border-image: -o-linear-gradient(
         left,
-        rgba(179,172,167,1) 1%,
+        rgba(255,255,255,1) 1%,
         rgba(0,0,0,1) 50%,
-        rgba(179,172,167,1) 100%
-    ) 0 0 100% 0/0 0 2px 0 stretch;
+        rgba(255,255,255,1) 100%
+    ) 0 0 100% 0/0 0 1px 0 stretch;
   
-   border-image: linear-gradient(
+    border-image: linear-gradient(
         to left,
-        rgba(179,172,167,1) 1%,
+        rgba(255,255,255,1) 1%,
         rgba(0,0,0,1) 50%,
-        rgba(179,172,167,1) 100%
-    ) 0 0 100% 0/0 0 2px 0 stretch;
-
-   border-image-slice: 1;
+        rgba(255,255,255,1) 100%
+    ) 0 0 100% 0/0 0 1px 0 stretch;
+    
+     border-image-slice: 1;
      
-   transition: all 0.3s ease-in-out;
-   -webkit-transition: all 0.3s ease-in-out;
-   -moz-transition: all 0.3s ease-in-out;
-   -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
 }
-   .fontana_form__inputAttr::-webkit-input-placeholder, 
-   #fontanta_form__message::-webkit-input-placeholder {
-     font-size: 1.2em;
-   }
+.fontana_form__inputAttr::-webkit-input-placeholder, #fontanta_form__message::-webkit-input-placeholder {
+ 
+  font-size: 1em;
+  
+}
 
+.fontanta_form__inputAttr::-moz-placeholder, #.fontanta_form__message::-moz-placeholder {
+  color: #aca49c;
+  font-size: 1.2em;
+}
 
-   .fontanta_form__inputAttr::-moz-placeholder, 
-   #fontanta_form__message::-moz-placeholder {
-     color: #aca49c;
-     font-size: 1.2em;
-   }
+.fontana_form__inputAttr:focus::-moz-placeholder,  #fontanta_form__message:focus::-moz-placeholder {
+  color: #FF530D;
+}
 
-   .fontana_form__inputAttr:focus::-moz-placeholder,  
-   #fontanta_form__message:focus::-moz-placeholder {
-     /*color: #FF530D;*/
-   }
+.fontana_form__inputAttr::placeholder,   #fontanta_form__message::placeholder {
+  color: #aca49c;
+  font-size: 1.2em;
+}
 
-   .fontana_form__inputAttr::placeholder,   
-   #fontanta_form__message::placeholder {
-     color: #aca49c;
-     font-size: 1.2em;
-   }
-
-.fontanta_form__inputAttr:focus::placeholder,   
-#fontana_form__message::focus:placeholder {
+.fontanta_form__inputAttr:focus::placeholder,   #fontana_form__message::focus:placeholder {
   color: #bbb5af;
 }
 
@@ -90,8 +110,7 @@
 }
 
 
-.fontana_form__inputAttr:hover::-moz-placeholder, 
-#fontana_form__message:hover::-moz-placeholder {
+.fontana_form__inputAttr:hover::-moz-placeholder, #fontana_form__message:hover::-moz-placeholder {
   font-size: 1.2em;
 }
 
@@ -100,211 +119,346 @@
   color: #cbc6c1;
 }
 
-.fontana_form__inputAttr:hover::placeholder, 
-#fontana_form__message:hover::placeholder {
+.fontana_form__inputAttr:hover::placeholder, fontana_form__message:hover::placeholder {
   color: #e2dedb;
   font-size:1.2em;
 }
 
-.fontana_form__inputAttr:hover:focus::placeholder, 
-#fontana_form__message:hover:focus::placeholder {
+.fontana_form__inputAttr:hover:focus::placeholder, #fontana_form__message:hover:focus::placeholder {
   color: #2e8b57;
 }
 
-.fontana_form__inputAttr:hover::placeholder, 
-#fontana_form__message:hover::placeholder {
+.fontana_form__inputAttr:hover::placeholder, #fontana_form__message:hover::placeholder {
   color: #e2dedb;
   font-size:1.2em; 
 }
 
 .fontana_form__inputAttr:hover:focus::-ms-placeholder,
 #fontana_form__message:hover::focus:-ms-placeholder {
-  color: #cbc6c1;
+ color: #cbc6c1;
 }
-
-#fontanta_form__header {
-  position: relative;
-  margin: 100px 0 25px 0;
-  font-size: 1.5em;
-  text-align: center;
-  letter-spacing: 7px;
- 
-  background: -webkit-linear-gradient(#eee, #333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-#fontana_form {
-  position: relative;
-  width: 500px;
-  margin: 50px auto 100px auto;
-}
-
 
 #fontana_form__message {
 
   width: 350px;
   height: 250px;
-  max-height: 300px;
   background: transparent;
   outline: none;
   color: #726659;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto';
   font-size: 1em;
-  
-  
-  -webkit-border-image: -webkit-linear-gradient(
+  margin-left:-0.5em;
+   -webkit-border-image: -webkit-linear-gradient(
         bottom,
-        rgba(179,172,167,1) 12%,
+        rgba(255,255,255,1) 1%,
         rgba(0,0,0,1) 50%,
-        rgba(179,172,167,1) 85%
-    ) 0 100% 0 100%/0 2px 0 2px stretch;
+        rgba(255,255,255,1) 100%
+    ) 0 100% 0 100%/0 1px 0 1px stretch;
   
    -moz-border-image: -moz-linear-gradient(
         bottom,
-        rgba(179,172,167,1) 1%,
+        rgba(255,255,255,1) 1%,
         rgba(0,0,0,1) 50%,
-        rgba(179,172,167,1) 100%
-    ) 0 100% 0 100%/0 2px 0 2px stretch;
+        rgba(255,255,255,1) 100%
+    ) 0 100% 0 100%/0 1px 0 1px stretch;
   
     -o-border-image: -o-linear-gradient(
         bottom,
-        rgba(179,172,167,1) 1%,
+       rgba(255,255,255,1) 1%,
         rgba(0,0,0,1) 50%,
-        rgba(179,172,167,1) 100%
-    ) 0 100% 0 100%/0 2px 0 2px stretch;
+        rgba(255,255,255,1) 100%
+    ) 0 100% 0 100%/0 1px 0 1px stretch;
   
     border-image: linear-gradient(
         bottom,
-        rgba(179,172,167,1) 1%,
+        rgba(255,255,255,1) 1%,
         rgba(0,0,0,1) 50%,
-        rgba(179,172,167,1) 100%
-    ) 0 100% 0 100%/0 2px 0 2px stretch;
+        rgba(255,255,255,1) 100%
+    ) 0 100% 0 100%/0 1px 0 1px stretch;*/
 
       border-image-slice: 1;
       box-sizing: border-box !important; 
+  
 }
   
 
 .fontana_form__inputAttr:required:valid{
-
    border-style: solid;
-    
-    -webkit-border-image: -webkit-linear-gradient(
+   -webkit-border-image: -webkit-linear-gradient(
         left,
-        rgba(0,0,0,1) 1%,
-        rgba(179,172,167,1) 50%,
-        rgba(0,0,0,1) 100%
-    ) 0 0 100% 0/0 0 2px 0 stretch;
-
+        rgba(255,255,255,1) 1%,
+        rgba(233,21,205,1) 50%,
+        rgba(255,255,255,1) 100%
+    ) 0 0 100% 0/0 0 1px 0 stretch;
+  
     -moz-border-image: -moz-linear-gradient(
         left,
-        rgba(0,0,0,1) 1%,
-        rgba(0,255,255,1) 50%,
-        rgba(0,0,0,1) 100%
-    ) 0 0 100% 0/0 0 2px 0 stretch;
-
+        rgba(255,255,255,1) 1%,
+        rgba(233,21,205,1) 50%,
+        rgba(255,255,255,1) 100%
+    ) 0 0 100% 0/0 0 1px 0 stretch;
+  
     -o-border-image: -o-linear-gradient(
         left,
-        rgba(0,0,0,1) 1%,
-        rgba(0,255,255,1) 50%,
-        rgba(0,0,0,1) 100%
-    ) 0 0 100% 0/0 0 2px 0 stretch;
-
+        rgba(255,255,255,1) 1%,
+        rgba(233,21,205,1) 50%,
+        rgba(255,255,255,1) 100%
+    ) 0 0 100% 0/0 0 1px 0 stretch;
+  
     border-image: linear-gradient(
         to left,
-        rgba(0,0,0,1) 1%,
-        rgba(0,255,255,1) 50%,
-        rgba(0,0,0,1) 100%
-    ) 0 0 100% 0/0 0 2px 0 stretch;
+        rgba(255,255,255,1) 1%,
+        rgba(233,21,205,1) 50%,
+        rgba(255,255,255,1) 100%
+    ) 0 0 100% 0/0 0 1px 0 stretch;
 } 
 
 #fontana_form__message:required:valid{
-  
   border-style: solid;
-    
   -webkit-border-image: -webkit-linear-gradient(
         bottom,
-        rgba(0,0,0,1) 1%,
-        rgba(0,255,255,1) 50%,
-        rgba(0,0,0,1) 100%
-  ) 0 100% 0 100%/0 2px 0 2px stretch;
-  -moz-border-image: -moz-linear-gradient(
+        rgba(255,255,255,1) 1%,
+        rgba(233,21,205,1) 50%,
+        rgba(255,255,255,1) 100%
+    ) 0 100% 0 100%/0 1px 0 1px stretch;
+    -moz-border-image: -moz-linear-gradient(
         bottom,
-        rgba(0,0,0,1) 1%,
-        rgba(0,255,255,1) 50%,
-        rgba(0,0,0,1) 100%
-  ) 0 100% 0 100%/0 2px 0 2px stretch;
-  -o-border-image: -o-linear-gradient(
+        rgba(255,255,255,1) 1%,
+        rgba(233,21,205,1) 50%,
+        rgba(255,255,255,1) 100%
+    ) 0 100% 0 100%/0 1px 0 1px stretch;
+    -o-border-image: -o-linear-gradient(
         bottom,
-        rgba(0,0,0,1) 1%,
-        rgba(0,255,255,1) 50%,
-        rgba(0,0,0,1) 85%
-  ) 0 100% 0 100%/0 2px 0 2px stretch;
-  border-image: linear-gradient(
+        rgba(255,255,255,1) 1%,
+        rgba(233,21,205,1) 85%,
+        rgba(255,255,255,1) 100%
+    ) 0 100% 0 100%/0 1px 0 1px stretch;
+    border-image: linear-gradient(
         bottom,
-        rgba(0,0,0,1) 12%,
-        rgba(0,255,255,1) 50%,
-        rgba(0,0,0,1) 100%
-    ) 0 100% 0 100%/0 2px 0 2px stretch;
+        rgba(255,255,255,1) 12%,
+        rgba(233,21,205,1) 50%,
+        rgba(255,255,255,1) 100%
+    ) 0 100% 0 100%/0 1px 0 1px stretch;
 }
 #fontana_form__textbottom{
- 
   width:344px;
-  margin-top: -2px;
+  margin-top: -0.5em;
   border-style:solid;
   -webkit-border-image: -webkit-linear-gradient(
         left,
-        rgba(179,172,167,1) 12%,
+        rgba(255,255,255,1) 1%,
         rgba(0,0,0,1) 50%,
-        rgba(179,172,167,1) 85%
-  ) 100% 0 0 0/2px 0 0 0 stretch;
+        rgba(255,255,255,1) 100%
+    ) 100% 0 0 0/1px 0 0 0 stretch;
+  
   -moz-border-image: -moz-linear-gradient(
         left,
-        rgba(179,172,167,1) 12%,
+        rgba(255,255,255,1) 1%,
         rgba(0,0,0,1) 50%,
-        rgba(179,172,167,1) 85%
-  ) 100% 0 0 0/2px 0 0 0 stretch;
-  -o-border-image: -o-linear-gradient(
+        rgba(255,255,255,1) 100%
+    ) 0 0 100% 0/0 0 1px 0 stretch;
+    -o-border-image: -o-linear-gradient(
         left,
-        rgba(179,172,167,1) 12%,
+        rgba(255,255,255,1) 1%,
         rgba(0,0,0,1) 50%,
-        rgba(179,172,167,1) 85%
-  ) 100% 0 0 0/2px 0 0 0 stretch;
-  border-image: linear-gradient(
+        rgba(255,255,255,1) 100%
+    ) 0 0 100% 0/0 0 1px 0 stretch;
+  
+    border-image: linear-gradient(
         to left,
-        rgba(179,172,167,1) 12%,
+        rgba(255,255,255,1) 1%,
         rgba(0,0,0,1) 50%,
-        rgba(179,172,167,1) 85%
-  ) 100% 0 0 0/2px 0 0 0 stretch;
+        rgba(255,255,255,1) 100%
+    ) 0 0 100% 0/0 0 1px 0 stretch;
+
+     border-image-slice: 1;
+     
 }
 
 #fontana_form__message:required:valid + #fontana_form__textbottom{
-  
-  border-style: solid;  
+  border-style: solid;
   -webkit-border-image: -webkit-linear-gradient(
         left,
-        rgba(0,0,0,1) 1%,
-        rgba(0,255,255,1) 50%,
-        rgba(0,0,0,1) 100%
-  ) 0 0 100% 0/0 0 2px 0 stretch;
+        rgba(255,255,255,1) 1%,
+        rgba(233,21,205,1) 50%,
+        rgba(255,255,255,1) 100%
+    ) 0 0 100% 0/0 0 1px 0 stretch;
+    -moz-border-image: -moz-linear-gradient(
+        left,
+        rgba(255,255,255,1) 1%,
+        rgba(233,21,205,1) 50%,
+        rgba(255,255,255,1) 100%
+    ) 0 0 100% 0/0 0 1px 0 stretch;
+    -o-border-image: -o-linear-gradient(
+        left,
+        rgba(255,255,255,1) 1%,
+        rgba(233,21,205,1) 50%,
+        rgba(255,255,255,1) 100%
+    ) 0 0 100% 0/0 0 1px 0 stretch;
+    border-image: linear-gradient(
+        to left,
+        rgba(255,255,255,1) 1%,
+        rgba(233,21,205,1) 50%,
+        rgba(255,255,255,1) 100%
+    ) 0 0 100% 0/0 0 1px 0 stretch;
+     
+}
+
+#fontana_form__message::-webkit-input-placeholder{
+  padding-top:64.5%;
+}
+/* submit buttons */
+.button_white, .button_black{
+  position:relative;
+  left: -80px;
+ /* padding: 30px 10px -12px 2px;*/
+  background: #060708;
+  margin : 20px auto;
+  width : 250px;
+  height : 110px;
+  overflow: hidden;
+  text-align : center;
+  transition : .2s;
+  cursor : pointer;
+  border-radius: 4px;
+  box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+}
+.button_white{
+  background:#e5e5e5;
+}
+
+.button_black__btnText, 
+.button_white__btnText{
+  text-align:center;
+  padding-top:0.7em;
+  color : white;
+  transition : .3s;
+  font-size: 1.5em;
+  letter-spacing: 0.2em;
+  opacity: 0.9;
+  font-family: 'Roboto';
+  font-weight:300;
+}
+
+.button_white__btnText{
+  color:black;
+}
+
+.button_black__line-before{
+  position:relative;
+  top: 1.4em;
+  height:1px;
+  width:250px;
+   -webkit-border-image: -webkit-linear-gradient(
+        left,
+        rgba(0,0,0,1) 12%,
+        rgba(255,255,255,1) 50%,
+        rgba(0,0,0,1) 85%
+    ) 100% 0 0 0/1px 0 0 0 stretch;
+   
+    -moz-border-image: -moz-linear-gradient(
+        left,
+        rgba(0,0,0,1) 12%,
+        rgba(255,255,255,1) 50%,
+        rgba(0,0,0,1) 85%
+    ) 100% 0 0 0/1px 0 0 0 stretch;
+
+     -o-border-image: -o-linear-gradient(
+        left,
+        rgba(0,0,0,1) 12%,
+        rgba(255,255,255,1) 50%,
+        rgba(0,0,0,1) 85%
+    ) 100% 0 0 0/1px 0 0 0 stretch;
+
+   box-shadow: inset 0 -3px 3px 0 rgba(0, 0, 0, 0.1), inset 0 -1px 1px 0 rgba(255, 255, 255, 0.4), 0 2px 0 0 rgba(0, 0, 0, 0.2);
+}
+.button_black__line-after{
+  position:relative;
+  bottom:0.25em;
+  height:1px;
+  width:250px;
+ -webkit-border-image: -webkit-linear-gradient(
+        left,
+        rgba(0,0,0,1) 12%,
+        rgba(255,255,255,1) 50%,  
+        rgba(255,255,255,1) 53%,
+        rgba(0,0,0,1) 85%
+    ) 100% 0 0 0/1px 0 0 0 stretch;
+  
   -moz-border-image: -moz-linear-gradient(
         left,
-        rgba(0,0,0,1) 1%,
-        rgba(0,255,255,1) 50%,
-        rgba(0,0,0,1) 100%
-  ) 0 0 100% 0/0 0 2px 0 stretch;
+        rgba(0,0,0,1) 12%,
+        rgba(255,255,255,1) 50%,  
+        rgba(255,255,255,1) 53%,
+        rgba(0,0,0,1) 85%
+    ) 100% 0 0 0/1px 0 0 0 stretch;
+
   -o-border-image: -o-linear-gradient(
         left,
-        rgba(0,0,0,1) 1%,
-        rgba(0,255,255,1) 50%,
-        rgba(0,0,0,1) 100%
-  ) 0 0 100% 0/0 0 2px 0 stretch;
+        rgba(0,0,0,1) 12%,
+        rgba(255,255,255,1) 50%,  
+        rgba(255,255,255,1) 53%,
+        rgba(0,0,0,1) 85%
+    ) 100% 0 0 0/1px 0 0 0 stretch;
+
   border-image: linear-gradient(
-        to left,
-        rgba(0,0,0,1) 1%,
-        rgba(0,255,255,1) 50%,
-        rgba(0,0,0,1) 100%
-  ) 0 0 100% 0/0 0 2px 0 stretch;
+        left,
+        rgba(0,0,0,1) 12%,
+        rgba(255,255,255,1) 50%,  
+        rgba(255,255,255,1) 53%,
+        rgba(0,0,0,1) 85%
+    ) 100% 0 0 0/1px 0 0 0 stretch;
+
+}
+
+.button_white__line-before{
+  position:relative;
+  top: 1.4em;
+  height:1px;
+  width:250px;
      
+   -webkit-border-image: -webkit-linear-gradient(
+        left,
+        rgba(229,229,229,1) 12%,
+        rgba(0,0,0,1) 50%,
+        rgba(229,229,229,1) 85%
+    ) 100% 0 0 0/1px 0 0 0 stretch;
+  
+   -moz-border-image: -moz-linear-gradient(
+        left,
+        rgba(229,229,229,1) 12%,
+        rgba(0,0,0,1) 50%
+        rgba(229,229,229,1) 85%
+    ) 100% 0 0 0/1px 0 0 0 stretch;
+   -o-border-image: -o-linear-gradient(
+        left,
+        rgba(229,229,229,1) 12%,
+        rgba(0,0,0,1) 50%
+        rgba(229,229,229,1) 85%
+    ) 100% 0 0 0/1px 0 0 0 stretch;
+   border-image: linear-gradient(
+        left,
+        rgba(229,229,229,1) 12%,
+        rgba(0,0,0,1) 50%
+        rgba(229,229,229,1) 85%
+    ) 100% 0 0 0/1px 0 0 0 stretch;
+
+}
+.button_white__line-after{
+  position:relative;
+  bottom:0.25em;;
+   height:5px;
+  width:250px;
+ -webkit-border-image: -webkit-linear-gradient(
+        left,
+        rgba(229,229,229,1) 12%,
+        rgba(0,0,0,1) 50%,  
+        rgba(0,0,0,1) 53%,
+        rgba(229,229,229,1) 85%
+    ) 100% 0 0 0/1px 0 0 0 stretch;
+}
+
+
+.button_black:active, .button_white:active { /*Clicked and held*/
+  box-shadow: 0px 5px 6px rgba(0,0,0,0.3);
 }

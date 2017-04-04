@@ -8,23 +8,36 @@
           href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
     	<link rel="stylesheet" href="main.css"/>
     	<link rel="stylesheet"
-    	      href="http://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
+    	      href="http://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
     	<title>Form Fontana</title>
 	</head>    
 	<body>
 		<header id="fontanta_form__header">Form inspired by Italian artist/painter Lucio Fontana</header>
 
 		<form id="fontana_form"> 
-  			<input id="fontana_form__first-name" class="fontana_form__inputAttr" type="text" placeholder="FIRST NAME" minlength="3" required> 
+  		<input id="fontana_form__first-name" class="fontana_form__inputAttr" type="text" 
+             placeholder="FIRST NAME" minlength="3" maxlength="25" required> 
   
-  		  	<input id="fontana_form__last-name" class="fontana_form__inputAttr" type="text" placeholder="LAST NAME" minLength="3" required>
+  		<input id="fontana_form__last-name" class="fontana_form__inputAttr" type="text" 
+            placeholder="LAST NAME" minLength="3" maxlength="25" required>
 
-  			<input id="fontana_form__email"  class="fontana_form__inputAttr type="email"             placeholder="EMAIL" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" required>
+  		<input id="fontana_form__email"  class="fontana_form__inputAttr type="email"             placeholder="EMAIL" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[
+                   a-zA-Z]{2,}" required>
  
-		 	<textarea id="fontana_form__message" type="text" cols="45" rows="5" required placeholder="MESSAGE"></textarea>
+		 	<textarea id="fontana_form__message" type="text" cols="45" rows="5" required 
+                placeholder="MESSAGE"></textarea>
   
-  			<div id="fontana_form__textbottom"></div>
-  
+  		<div id="fontana_form__textbottom"></div>
+      <div class="button_white">
+        <div class="button_white__line-before"></div>
+        <p class="button_white__btnText">SUBMIT</p>
+        <div class="button_white__line-after"></div>   
+      </div>
+      <div class="button_black">
+        <div class="button_black__line-before"></div>
+        <p class="button_black__btnText">SUBMIT</p>
+        <div class="button_black__line-after"></div>  
+      </div>                         
 		</form>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 	</body>
