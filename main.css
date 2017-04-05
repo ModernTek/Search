@@ -1,10 +1,7 @@
-
-
-*, *::after, *::before{
-  box-sizing: border-box;
+.evo_c-fontana-form{
+   box-sizing: border-box;
 }
-
-#fontana_form {
+#evo_c-fontana-form {
   position: relative;
   width: 500px;
   margin: 50px auto;
@@ -22,7 +19,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.fontana_form__inputAttr {
+.evo_c-fontana-form__inputAttr {
   font-family: 'Roboto';
   vertical-align:bottom;
   font-size: 1em;
@@ -61,84 +58,84 @@
         rgba(255,255,255,1) 100%
     ) 0 0 100% 0/0 0 1px 0 stretch;
     
-     border-image-slice: 1;
+    border-image-slice: 1;
      
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
 }
-.fontana_form__inputAttr::-webkit-input-placeholder, #fontanta_form__message::-webkit-input-placeholder {
+.evo_c-fontana-form__inputAttr::-webkit-input-placeholder, #evo_c-fontana-form__message::-webkit-input-placeholder {
  
   font-size: 1em;
   
 }
 
-.fontanta_form__inputAttr::-moz-placeholder, #.fontanta_form__message::-moz-placeholder {
+.evo_c-fontana-form__inputAttr::-moz-placeholder, #evo_c-fontana-form__message::-moz-placeholder {
   color: #aca49c;
   font-size: 1.2em;
 }
 
-.fontana_form__inputAttr:focus::-moz-placeholder,  #fontanta_form__message:focus::-moz-placeholder {
+.evo_c-fontana-form__inputAttr:focus::-moz-placeholder,  #evo_c-fontana-form__message:focus::-moz-placeholder {
   color: #FF530D;
 }
 
-.fontana_form__inputAttr::placeholder,   #fontanta_form__message::placeholder {
+.evo_c-fontana-form__inputAttr::placeholder,   #evo_c-fontana-form__message::placeholder {
   color: #aca49c;
   font-size: 1.2em;
 }
 
-.fontanta_form__inputAttr:focus::placeholder,   #fontana_form__message::focus:placeholder {
+.evo_c-fontana-form__inputAttr:focus::placeholder,   #evo_c-fontana-form__message::focus:placeholder {
   color: #bbb5af;
 }
 
-.fontana_form__inputAttr::-ms-placeholder, 
- #fontana_form__message::-ms-placeholder {
+.evo_c-fontana-form__inputAttr::-ms-placeholder, 
+ #evo_c-fontana-form__message::-ms-placeholder {
   color: #aca49c;
   font-size: 1.2em;
 }
 
-.fontana_form__inputAttr:focus::-ms-placeholder,    #fontanta_form__message:focus::-ms-placeholder {
+.evo_c-fontana-form__inputAttr:focus::-ms-placeholder,    #fontanta_form__message:focus::-ms-placeholder {
   color: #bbb5af;
 }
 
 /* on hover placeholder */
 
-.fontana_form__inputAttr:hover::-webkit-input-placeholder, 
-#fontana_form__message:hover::-webkit-input-placeholder {
+.evo_c-fontana-form__inputAttr:hover::-webkit-input-placeholder, 
+#evo_c-fontana-form__message:hover::-webkit-input-placeholder {
   font-size: 1.2em;
 }
 
 
-.fontana_form__inputAttr:hover::-moz-placeholder, #fontana_form__message:hover::-moz-placeholder {
+.evo_c-fontana-form__inputAttr:hover::-moz-placeholder, #evo_c-fontana-form__message:hover::-moz-placeholder {
   font-size: 1.2em;
 }
 
-.fontana_form__inputAttr:hover:focus::-moz-placeholder,
-#fontana_formt__message:hover:focus::-moz-placeholder {
+.evo_c-fontana-form__inputAttr:hover:focus::-moz-placeholder,
+#evo_c-fontana-formt__message:hover:focus::-moz-placeholder {
   color: #cbc6c1;
 }
 
-.fontana_form__inputAttr:hover::placeholder, fontana_form__message:hover::placeholder {
+.evo_c-fontana-form__inputAttr:hover::placeholder, evo_c-fontana-form__message:hover::placeholder {
   color: #e2dedb;
   font-size:1.2em;
 }
 
-.fontana_form__inputAttr:hover:focus::placeholder, #fontana_form__message:hover:focus::placeholder {
+.evo_c-fontana-form__inputAttr:hover:focus::placeholder, #evo_c-fontana-form__message:hover:focus::placeholder {
   color: #2e8b57;
 }
 
-.fontana_form__inputAttr:hover::placeholder, #fontana_form__message:hover::placeholder {
+.evo_c-fontana-form__inputAttr:hover::placeholder, #evo_c-fontana-form__message:hover::placeholder {
   color: #e2dedb;
   font-size:1.2em; 
 }
 
-.fontana_form__inputAttr:hover:focus::-ms-placeholder,
-#fontana_form__message:hover::focus:-ms-placeholder {
+.evo_c-fontana-form__inputAttr:hover:focus::-ms-placeholder,
+#evo_c-fontana-form__message:hover::focus:-ms-placeholder {
  color: #cbc6c1;
 }
 
-#fontana_form__message {
+#evo_c-fontana-form__message {
 
   width: 350px;
   height: 250px;
@@ -148,7 +145,9 @@
   font-family: 'Roboto';
   font-size: 1em;
   margin-left:-0.5em;
-   -webkit-border-image: -webkit-linear-gradient(
+  border-top: none;
+  border-bottom: none;
+  -webkit-border-image: -webkit-linear-gradient(
         bottom,
         rgba(255,255,255,1) 1%,
         rgba(0,0,0,1) 50%,
@@ -174,7 +173,7 @@
         rgba(255,255,255,1) 1%,
         rgba(0,0,0,1) 50%,
         rgba(255,255,255,1) 100%
-    ) 0 100% 0 100%/0 1px 0 1px stretch;*/
+    ) 0 100% 0 100%/0 1px 0 1px stretch;
 
       border-image-slice: 1;
       box-sizing: border-box !important; 
@@ -182,7 +181,7 @@
 }
   
 
-.fontana_form__inputAttr:required:valid{
+.evo_c-fontana-form__inputAttr:required:valid{
    border-style: solid;
    -webkit-border-image: -webkit-linear-gradient(
         left,
@@ -213,8 +212,10 @@
     ) 0 0 100% 0/0 0 1px 0 stretch;
 } 
 
-#fontana_form__message:required:valid{
+#evo_c-fontana-form__message:required:valid{
   border-style: solid;
+  border-top:none;
+  border-bottom:none;
   -webkit-border-image: -webkit-linear-gradient(
         bottom,
         rgba(255,255,255,1) 1%,
@@ -232,7 +233,7 @@
         rgba(255,255,255,1) 1%,
         rgba(233,21,205,1) 85%,
         rgba(255,255,255,1) 100%
-    ) 0 100% 0 100%/0 1px 0 1px stretch;
+    ) 0 100% 0 100%/0 1px 0 1px stretch; 
     border-image: linear-gradient(
         bottom,
         rgba(255,255,255,1) 12%,
@@ -240,7 +241,7 @@
         rgba(255,255,255,1) 100%
     ) 0 100% 0 100%/0 1px 0 1px stretch;
 }
-#fontana_form__textbottom{
+#evo_c-fontana-form__textbottom{
   width:344px;
   margin-top: -0.5em;
   border-style:solid;
@@ -275,7 +276,7 @@
      
 }
 
-#fontana_form__message:required:valid + #fontana_form__textbottom{
+#evo_c-fontana-form__message:required:valid + #evo_c-fontana-form__textbottom{
   border-style: solid;
   -webkit-border-image: -webkit-linear-gradient(
         left,
@@ -294,7 +295,7 @@
         rgba(255,255,255,1) 1%,
         rgba(233,21,205,1) 50%,
         rgba(255,255,255,1) 100%
-    ) 0 0 100% 0/0 0 1px 0 stretch;
+    ) 0 0 100% 0/0 0 1px 0 stretch;*/
     border-image: linear-gradient(
         to left,
         rgba(255,255,255,1) 1%,
@@ -304,11 +305,11 @@
      
 }
 
-#fontana_form__message::-webkit-input-placeholder{
+#evo_c-fontana-form__message::-webkit-input-placeholder{
   padding-top:64.5%;
 }
 /* submit buttons */
-.button_white, .button_black{
+.evo_c-fontana-form__button_white, .evo_c-fontana-form__button_black{
   position:relative;
   left: -80px;
  /* padding: 30px 10px -12px 2px;*/
@@ -323,12 +324,12 @@
   border-radius: 4px;
   box-shadow: 0px 1px 2px rgba(0,0,0,.2);
 }
-.button_white{
+.evo_c-fontana-form__button_white{
   background:#e5e5e5;
 }
 
-.button_black__btnText, 
-.button_white__btnText{
+.evo_c-fontana-form__button_black__btnText, 
+.evo_c-fontana-form__button_white__btnText{
   text-align:center;
   padding-top:0.7em;
   color : white;
@@ -340,11 +341,11 @@
   font-weight:300;
 }
 
-.button_white__btnText{
+.evo_c-fontana-form__button_white__btnText{
   color:black;
 }
 
-.button_black__line-before{
+.evo_c-fontana-form__button_black__line-before{
   position:relative;
   top: 1.4em;
   height:1px;
@@ -372,7 +373,7 @@
 
    box-shadow: inset 0 -3px 3px 0 rgba(0, 0, 0, 0.1), inset 0 -1px 1px 0 rgba(255, 255, 255, 0.4), 0 2px 0 0 rgba(0, 0, 0, 0.2);
 }
-.button_black__line-after{
+.evo_c-fontana-form__button_black__line-after{
   position:relative;
   bottom:0.25em;
   height:1px;
@@ -399,7 +400,7 @@
         rgba(255,255,255,1) 50%,  
         rgba(255,255,255,1) 53%,
         rgba(0,0,0,1) 85%
-    ) 100% 0 0 0/1px 0 0 0 stretch;
+    ) 100% 0 0 0/1px 0 0 0 stretch; */
 
   border-image: linear-gradient(
         left,
@@ -411,7 +412,7 @@
 
 }
 
-.button_white__line-before{
+.evo_c-fontana-form__button_white__line-before{
   position:relative;
   top: 1.4em;
   height:1px;
@@ -435,7 +436,7 @@
         rgba(229,229,229,1) 12%,
         rgba(0,0,0,1) 50%
         rgba(229,229,229,1) 85%
-    ) 100% 0 0 0/1px 0 0 0 stretch;
+    ) 100% 0 0 0/1px 0 0 0 stretch;*/
    border-image: linear-gradient(
         left,
         rgba(229,229,229,1) 12%,
@@ -444,7 +445,7 @@
     ) 100% 0 0 0/1px 0 0 0 stretch;
 
 }
-.button_white__line-after{
+.evo_c-fontana-form__button_white__line-after{
   position:relative;
   bottom:0.25em;;
    height:5px;
@@ -459,6 +460,6 @@
 }
 
 
-.button_black:active, .button_white:active { /*Clicked and held*/
+.evo_c-fontana-form__button_black:active, .evo_c-fontana-form__button_white:active { 
   box-shadow: 0px 5px 6px rgba(0,0,0,0.3);
 }
