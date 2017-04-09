@@ -49,7 +49,7 @@
 .evo_c-fontana-form__inputAttr::-webkit-input-placeholder, #evo_c-fontana-form__message::-webkit-input-placeholder {
  
   font-size: 1.1em;
-  opacity:0.7;
+  opacity:0.6;
 }
 
 /*.evo_c-fontana-form__inputAttr::-moz-placeholder, #evo_c-fontana-form__message::-moz-placeholder {
@@ -64,7 +64,7 @@
 .evo_c-fontana-form__inputAttr::placeholder,   #evo_c-fontana-form__message::placeholder {
   color: #aca49c;
   font-size: 1.1em;
-  opacity:0.3;
+  opacity:0.6;
   font-weight:200;
 }
 
